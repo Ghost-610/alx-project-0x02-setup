@@ -1,6 +1,9 @@
-export default function About() {
+import Header from '../components/layout/Header';
+
+export default function AboutPage() {
   return (
     <div>
+           <Header />
       <h1 className="text-center text-4xl font-bold text-orange-700 my-8">
         About Page
       </h1>
