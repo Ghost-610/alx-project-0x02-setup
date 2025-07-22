@@ -1,0 +1,3 @@
+# Next.js Project Setup and Basics
+
+This repository serves as a practical guide and reference for setting up a new Next.js project from scratch. It covers the essential steps for project initialization, understanding the basic file structure, and exploring core Next.js concepts such as pages, routing, data fetching, and component creation. The aim is to provide a clear and concise resource for developers getting started with Next.js.
