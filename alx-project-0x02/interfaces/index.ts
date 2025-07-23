@@ -18,3 +18,16 @@ export interface CardProps {
   imageSrc: string; // 👈 New image prop
   imageAlt?: string; // Optional alt text
 }
+export interface PostModalProps {
+  isOpen: boolean;
+  onClose: () => void;
+  onSubmit: (data: { title: string; content: string }) => void;
+}
+
+// Interface for post data
+export interface PostData {
+  id: string;
+  title: string;
+  content: string;
+  createdAt: Date;
+}
