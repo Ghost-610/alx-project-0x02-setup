@@ -24,7 +24,7 @@ export interface PostModalProps {
 
 // Interface for post data
 export interface PostData {
-  id: string;
+  userId: string;
   title: string;
   content: string;
   createdAt: Date;
