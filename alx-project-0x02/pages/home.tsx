@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Header from "../components/layout/Header";
 import Card from "@/components/common/Card";
 import PostModal from '@/components/common/PostModal'; // ✅ Already imported
+import Link from 'next/link';
 
 // ✅ Define the card structure
 interface CardData {
@@ -34,15 +35,7 @@ const Home: React.FC = () => {
         The project is designed to help you set up your development environment.
       </p>
       <hr />
-      {/* ✅ Use static path from public/ */}
-      <img
-        src="/assets/images/house.png"
-        alt="Home Image"
-        className="mx-auto my-4"
-      />
-      <p className="text-center text-md text-gray-500">
-        Explore the project and learn more about its objectives.
-      </p>
+     
 
       <br />
 
@@ -87,13 +80,12 @@ const Home: React.FC = () => {
         onClose={() => setIsModalOpen(false)}
         onSubmit={handleAddCard}
       />
-
       <div className="text-center mt-8">
-        <a href="/about" className="text-blue-500 hover:underline">
+        <Link href="/about" className="text-blue-500 hover:underline">
           Learn more about this project
-        </a>
+        </Link>
       </div>
-    </div>
+      </div>
   );
 };
 

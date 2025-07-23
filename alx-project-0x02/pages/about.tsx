@@ -1,9 +1,12 @@
-import Header from '../components/layout/Header';
+// import { AboutProps } from "@/interfaces";
+import Button from "@/components/common/button";
+import Header from "../components/layout/Header";
 
-export default function AboutPage() {
+
+const About: React.FC = () => {
   return (
     <div>
-           <Header />
+      <Header />
       <h1 className="text-center text-4xl font-bold text-orange-700 my-8">
         About Page
       </h1>
@@ -12,6 +15,32 @@ export default function AboutPage() {
         <br />
         Here you can find more information about the project and its objectives.
       </p>
-    </div>
+      <hr />
+      <Button
+        size="large"
+        shape="rounded-md"
+        onClick={() => alert("Button clicked!")}
+      >
+        Click Me
+      </Button>
+      <hr />
+
+        <Button
+        size="medium"
+        shape="rounded-full"
+        onClick={() => alert("Button clicked!")}
+      >
+        Click Me
+      </Button> 
+      <hr />
+        <Button
+        size="small"
+        shape="rounded-sm"
+        onClick={() => alert("Button clicked!")}
+      >
+        Click Me
+      </Button>  
+    </div>  
   );
-}
+};
+export default About;
