@@ -7,7 +7,7 @@ const UserCard: React.FC<UserProps> = ({ name, email, address }) => {
       <h2 className="text-xl font-semibold">{name}</h2>
       <p className="text-sm text-gray-600">{email}</p>
       <p className="text-sm text-gray-800 mt-2">
-        {address.street}, {address.suite}, {address.city}, {address.zipcode}
+        {address.street}, {address.city}, {address.zipcode}
       </p>
     </div>
   );
