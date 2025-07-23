@@ -1,11 +1,12 @@
 // import React from 'react'
-import Header from '../components/layout/Header';
-import Card from '@/components/common/card';
+import Header from "../components/layout/Header";
+import Card from "@/components/common/card";
+
 
 export default function HomePageProps() {
   return (
     <div>
-           <Header />
+      <Header />
       <h1 className="text-center text-4xl font-bold text-yellow-700 my-8">
         Welcome Page
       </h1>
@@ -14,34 +15,46 @@ export default function HomePageProps() {
         <br />
         The project is designed to help you set up your development environment.
       </p>
-   {/* ✅ Use static path from public/ */}
-      <img src="/assets/images/house.png" alt="Home Image" className="mx-auto my-4" />
+      <hr />
+      {/* ✅ Use static path from public/ */}
+      {/* <img
+        src="/assets/images/house.png"
+        alt="Home Image"
+        className="mx-auto my-4"
+      />
       <p className="text-center text-md text-gray-500">
         Explore the project and learn more about its objectives.
-      </p>
+      </p> */}
 
+      <br />
 
-       <div>
+      <div>
         <Card
-          title="Card-1"
-          content="This project aims to set up a basic Next.js application with a structured layout and components."
+          title="Card Title"
+          content="This is the content of the card."
+          imageSrc="/assets/images/IMG.jpg" // must be in public/assets/images
+          imageAlt="Sample card image"
         />
+        <br />
         <Card
-          title="Card-2"
-          content="Follow the instructions in the README to set up your environment and run the application."
+          title="Card Title"
+          content="This is the content of the card."
+          imageSrc="/assets/images/IMG.jpg" // must be in public/assets/images
+          imageAlt="Sample card image"
         />
-         <Card
-          title="Card-3"
-          content="Follow the instructions in the README to set up your environment and run the application."
+       <br />
+        <Card
+          title="Card Title"
+          content="This is the content of the card."
+          imageSrc="/assets/images/IMG.jpg" // must be in public/assets/images
+          imageAlt="Sample card image"
         />
       </div>
       <div className="text-center mt-8">
         <a href="/about" className="text-blue-500 hover:underline">
           Learn more about this project
         </a>
+      </div>
     </div>
-    </div>
-
-   
   );
 }
