@@ -29,3 +29,10 @@ export interface PostData {
   content: string;
   createdAt: Date;
 }
+
+export interface PostData {
+  id: string;
+  title: string;
+  content: string;
+
+}
