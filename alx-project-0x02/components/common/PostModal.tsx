@@ -1,6 +1,6 @@
 // components/common/PostModal.tsx
 import React, { useState } from 'react';
-
+import Header from '../layout/Header';
 interface PostModalProps {
   isOpen: boolean;
   onClose: () => void;
@@ -23,6 +23,7 @@ const PostModal: React.FC<PostModalProps> = ({ isOpen, onClose, onSubmit }) => {
 
   return (
     <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
+      <Header />
       <div className="bg-amber-800 p-6 rounded-md w-80">
         <h2 className="text-lg font-semibold mb-4">Add New Post</h2>
         <form onSubmit={handleSubmit}>
