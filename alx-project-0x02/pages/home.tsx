@@ -1,9 +1,9 @@
-// import React from 'react'
+import React from 'react'
 import Header from "../components/layout/Header";
 import Card from "@/components/common/Card";
 
 
-export default function HomePageProps() {
+const Home: React.FC = () => {
   return (
     <div>
       <Header />
@@ -17,14 +17,14 @@ export default function HomePageProps() {
       </p>
       <hr />
       {/* ✅ Use static path from public/ */}
-      {/* <img
+      <img
         src="/assets/images/house.png"
         alt="Home Image"
         className="mx-auto my-4"
       />
       <p className="text-center text-md text-gray-500">
         Explore the project and learn more about its objectives.
-      </p> */}
+      </p>
 
       <br />
 
@@ -32,22 +32,16 @@ export default function HomePageProps() {
         <Card
           title="Card Title"
           content="This is the content of the card."
-          imageSrc="/assets/images/IMG.jpg" // must be in public/assets/images
-          imageAlt="Sample card image"
         />
         <br />
         <Card
           title="Card Title"
           content="This is the content of the card."
-          imageSrc="/assets/images/IMG.jpg" // must be in public/assets/images
-          imageAlt="Sample card image"
         />
        <br />
         <Card
           title="Card Title"
           content="This is the content of the card."
-          imageSrc="/assets/images/IMG.jpg" // must be in public/assets/images
-          imageAlt="Sample card image"
         />
       </div>
       <div className="text-center mt-8">
@@ -58,3 +52,5 @@ export default function HomePageProps() {
     </div>
   );
 }
+
+export default Home;

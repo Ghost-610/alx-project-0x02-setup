@@ -3,7 +3,7 @@ export interface BasicInterface {
   name: string;
 }
 
-export interface HomePageProps {
+export interface HomeProps {
   title: string;
   description: string;
 }
@@ -15,8 +15,6 @@ export interface AboutPageProps {
 export interface CardProps {
   title: string;
   content: string;
-  imageSrc: string; // 👈 New image prop
-  imageAlt?: string; // Optional alt text
 }
 export interface PostModalProps {
   isOpen: boolean;
