@@ -2,7 +2,6 @@
 import Button from "@/components/common/button";
 import Header from "../components/layout/Header";
 
-
 const About: React.FC = () => {
   return (
     <div>
